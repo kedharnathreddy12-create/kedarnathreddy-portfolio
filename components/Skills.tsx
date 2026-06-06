@@ -28,10 +28,10 @@ export default function Skills() {
         >
           <h2 className="section-title">Technical Skills</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+          <div className="skills-grid">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="glass-card" style={{ padding: '2rem', borderTop: `3px solid ${skillGroup.color}` }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--text-main)' }}>{skillGroup.category}</h3>
+              <div key={index} className="glass-card skill-card" style={{ borderTop: `3px solid ${skillGroup.color}` }}>
+                <h3 className="skill-category-title">{skillGroup.category}</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
                   {skillGroup.items.map((item, i) => (
                     <li key={i} style={{ 
@@ -53,10 +53,38 @@ export default function Skills() {
         </motion.div>
       </div>
       <style>{`
+        .skills-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          margin-top: 2rem;
+        }
+        .skill-card {
+          padding: 1.5rem;
+        }
+        .skill-category-title {
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+          color: var(--text-main);
+        }
         .skill-item:hover {
           background: rgba(255, 255, 255, 0.1) !important;
           transform: translateY(-2px);
           box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        @media (min-width: 768px) {
+          .skills-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+          }
+          .skill-card {
+            padding: 2rem;
+          }
+          .skill-category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
         }
       `}</style>
     </section>

@@ -21,7 +21,7 @@ const socials = [
   {
     name: 'LinkedIn',
     icon: <LinkedinOutlined />,
-    url: 'https://www.linkedin.com/',
+    url: '#TODO_UPDATE_LINKEDIN_URL',
     color: '#0a66c2' // LinkedIn Blue
   },
   {
@@ -65,13 +65,13 @@ export default function Contact() {
           <span style={{ color: 'var(--neon-blue)', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase' }}>What's Next?</span>
           <h2 className="section-title" style={{ marginTop: '0.5rem', marginBottom: '2rem' }}>Get In Touch</h2>
           
-          <div className="glass-card" style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', borderTop: '4px solid var(--neon-blue)' }}>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginBottom: '3rem', lineHeight: 1.6 }}>
+          <div className="glass-card contact-card">
+            <p className="contact-desc">
               Whether you have a question, want to collaborate on a project, or just want to say hi, my inbox is always open. 
               Connect with me on social media or send an email!
             </p>
             
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem' }}>
+            <div className="social-links-grid">
               {socials.map((social, idx) => (
                 <motion.a
                   key={social.name}
@@ -85,19 +85,9 @@ export default function Contact() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: idx * 0.1 }}
-                  className="social-card"
+                  className="social-card social-btn"
                   style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.8rem',
-                    padding: '1rem 1.5rem',
-                    background: 'var(--card-bg)',
-                    border: '1px solid var(--glass-border)',
-                    borderRadius: '12px',
                     color: 'var(--text-main)',
-                    textDecoration: 'none',
-                    fontSize: '1.1rem',
-                    fontWeight: 500,
                   }}
                 >
                   <span style={{ fontSize: '1.5rem', color: social.color, display: 'flex' }}>
@@ -110,6 +100,61 @@ export default function Contact() {
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        .contact-card {
+          padding: 1.5rem;
+          max-width: 100%;
+          margin: 0 auto;
+          border-top: 4px solid var(--neon-blue);
+          box-sizing: border-box;
+        }
+        .contact-desc {
+          font-size: 1rem;
+          color: var(--text-muted);
+          margin-bottom: 2rem;
+          line-height: 1.6;
+        }
+        .social-links-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .social-btn {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          padding: 0.8rem 1.2rem;
+          background: var(--card-bg);
+          border: 1px solid var(--glass-border);
+          border-radius: 12px;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 500;
+          justify-content: center;
+          min-height: 48px; /* Touch target */
+        }
+        @media (min-width: 768px) {
+          .contact-card {
+            padding: 3rem;
+          }
+          .contact-desc {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+          }
+          .social-links-grid {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+          }
+          .social-btn {
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            justify-content: flex-start;
+          }
+        }
+      `}</style>
     </section>
   );
 }

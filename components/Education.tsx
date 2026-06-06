@@ -19,12 +19,12 @@ export default function Education() {
             <h2 className="section-title">Education</h2>
           </div>
 
-          <div className="glass-card" style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', borderLeft: '4px solid var(--neon-purple)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-              <BookOutlined style={{ fontSize: '2rem', color: 'var(--neon-purple)' }} />
-              <h3 style={{ fontSize: '1.8rem', color: 'var(--text-main)', lineHeight: 1.4 }}>
+          <div className="glass-card edu-card" style={{ maxWidth: '800px', margin: '0 auto', borderLeft: '4px solid var(--neon-purple)' }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1.5rem' }}>
+              <BookOutlined className="edu-icon" />
+              <h3 className="edu-title">
                 Bachelor's Degree in Artificial Intelligence & Machine Learning (AI & ML) <br />
-                <span style={{ fontSize: '1.2rem', color: 'var(--text-muted)', fontWeight: 400 }}>(Currently Pursuing)</span>
+                <span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 400 }}>(Currently Pursuing)</span>
               </h3>
             </div>
             
@@ -58,6 +58,33 @@ export default function Education() {
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        .edu-card {
+          padding: 1.5rem;
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+        .edu-icon {
+          font-size: clamp(1.5rem, 4vw + 0.5rem, 2rem);
+          color: var(--neon-purple);
+          margin-top: 4px;
+        }
+        .edu-title {
+          font-size: clamp(1.2rem, 3vw + 0.5rem, 1.8rem);
+          color: var(--text-main);
+          line-height: 1.4;
+          word-break: break-word;
+        }
+        @media (min-width: 768px) {
+          .edu-card {
+            padding: 3rem;
+          }
+          .edu-icon {
+            margin-top: 0;
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -20,11 +20,11 @@ export default function FeaturedProject() {
             <h2 className="section-title" style={{ marginTop: '0.5rem', marginBottom: 0 }}>FortiChat</h2>
           </div>
 
-          <div className="glass-card" style={{ padding: '4rem', border: '1px solid var(--neon-blue)', boxShadow: '0 0 30px rgba(0, 240, 255, 0.1)', textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
-            <div style={{ fontSize: '4rem', color: 'var(--neon-blue)', marginBottom: '1.5rem' }}>
+          <div className="glass-card project-card" style={{ border: '1px solid var(--neon-blue)', boxShadow: '0 0 30px rgba(0, 240, 255, 0.1)', textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+            <div className="project-icon">
               <LockOutlined />
             </div>
-            <h3 style={{ fontSize: '2.2rem', marginBottom: '1.5rem', color: 'var(--text-main)' }}>Secure Communication Platform</h3>
+            <h3 className="project-title">Secure Communication Platform</h3>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2.5rem' }}>
               FortiChat is a secure communication platform currently under development. The project reflects my interest in software engineering, cybersecurity, secure communication systems, and modern web technologies.
             </p>
@@ -34,6 +34,36 @@ export default function FeaturedProject() {
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        .project-card {
+          padding: 1.5rem;
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+        .project-icon {
+          font-size: clamp(2.5rem, 6vw + 1rem, 4rem);
+          color: var(--neon-blue);
+          margin-bottom: 1rem;
+        }
+        .project-title {
+          font-size: clamp(1.5rem, 5vw + 0.5rem, 2.2rem);
+          margin-bottom: 1rem;
+          color: var(--text-main);
+          word-break: break-word;
+        }
+        @media (min-width: 768px) {
+          .project-card {
+            padding: 4rem;
+          }
+          .project-icon {
+            margin-bottom: 1.5rem;
+          }
+          .project-title {
+            margin-bottom: 1.5rem;
+          }
+        }
+      `}</style>
     </section>
   );
 }

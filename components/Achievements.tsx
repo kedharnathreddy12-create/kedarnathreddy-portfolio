@@ -41,15 +41,14 @@ export default function Achievements() {
             <h2 className="section-title">Achievements & Contributions</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
+          <div className="achievements-grid">
             {cards.map((card, index) => (
               <motion.div 
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="glass-card"
-                style={{ padding: '2rem', textAlign: 'center' }}
+                className="glass-card achievement-card"
               >
-                <div style={{ fontSize: '3rem', color: 'var(--neon-blue)', marginBottom: '1rem' }}>
+                <div style={{ fontSize: '2.5rem', color: 'var(--neon-blue)', marginBottom: '1rem' }}>
                   {card.icon}
                 </div>
                 <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: 'var(--text-main)' }}>{card.title}</h3>
@@ -59,6 +58,29 @@ export default function Achievements() {
           </div>
         </motion.div>
       </div>
+
+      <style>{`
+        .achievements-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .achievement-card {
+          padding: 1.5rem;
+          text-align: center;
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+        @media (min-width: 768px) {
+          .achievements-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+          }
+          .achievement-card {
+            padding: 2rem;
+          }
+        }
+      `}</style>
     </section>
   );
 }

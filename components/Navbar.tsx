@@ -29,26 +29,26 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-        padding: '1rem 2rem',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        transition: 'all 0.3s ease',
-        background: isScrolled ? 'rgba(10, 14, 23, 0.8)' : 'transparent',
-        backdropFilter: isScrolled ? 'blur(12px)' : 'none',
-        borderBottom: isScrolled ? '1px solid rgba(255,255,255,0.05)' : 'none',
-      }}
-    >
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="nav-wrapper"
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1000,
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          transition: 'all 0.3s ease',
+          background: isScrolled ? 'rgba(10, 14, 23, 0.8)' : 'transparent',
+          backdropFilter: isScrolled ? 'blur(12px)' : 'none',
+          borderBottom: isScrolled ? '1px solid rgba(255,255,255,0.05)' : 'none',
+        }}
+      >
       <div style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'Outfit' }}>
         <a href="#" className="gradient-text">KKR.</a>
       </div>
@@ -67,7 +67,13 @@ export default function Navbar() {
       <div className="nav-mobile" style={{ display: 'block' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <ThemeSwitcher />
-          <MenuOutlined style={{ fontSize: '1.5rem', cursor: 'pointer' }} onClick={() => setDrawerVisible(true)} />
+          <button 
+            onClick={() => setDrawerVisible(true)} 
+            style={{ background: 'none', border: 'none', color: 'inherit', padding: '10px', minHeight: '44px', minWidth: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+            aria-label="Open Menu"
+          >
+            <MenuOutlined style={{ fontSize: '1.5rem' }} />
+          </button>
         </div>
       </div>
 
@@ -93,8 +99,11 @@ export default function Navbar() {
       </Drawer>
 
       <style>{`
+        .nav-wrapper { padding: 1rem 1.2rem; }
         .nav-link:hover { color: var(--neon-blue); }
+        .nav-link { min-height: 44px; display: inline-flex; alignItems: center; }
         @media (min-width: 768px) {
+          .nav-wrapper { padding: 1rem 2rem; }
           .nav-desktop { display: block !important; }
           .nav-mobile { display: none !important; }
         }

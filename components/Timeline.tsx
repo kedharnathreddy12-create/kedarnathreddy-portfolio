@@ -1,11 +1,19 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Timeline as AntTimeline } from 'antd';
 import { CodeOutlined, SafetyOutlined, MessageOutlined, TrophyOutlined } from '@ant-design/icons';
 
 export default function Timeline() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const items = [
     {
       color: 'var(--neon-blue)',
@@ -60,11 +68,27 @@ export default function Timeline() {
         >
           <h2 className="section-title">My Journey</h2>
           
-          <div style={{ maxWidth: '800px', margin: '3rem auto 0', padding: '2rem', background: 'var(--card-bg)', borderRadius: '16px', border: '1px solid var(--glass-border)' }}>
-            <AntTimeline mode="alternate" items={items} />
+          <div className="timeline-container">
+            <AntTimeline mode={isMobile ? "start" : "alternate"} items={items} />
           </div>
         </motion.div>
       </div>
+      <style>{`
+        .timeline-container {
+          max-width: 800px;
+          margin: 2rem auto 0;
+          padding: 1.5rem;
+          background: var(--card-bg);
+          border-radius: 16px;
+          border: 1px solid var(--glass-border);
+        }
+        @media (min-width: 768px) {
+          .timeline-container {
+            margin-top: 3rem;
+            padding: 2rem;
+          }
+        }
+      `}</style>
     </section>
   );
 }

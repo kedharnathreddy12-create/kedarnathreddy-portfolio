@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   description: 'Portfolio of Kakanuru Kedarnath Reddy. Cybersecurity Enthusiast, Full Stack Developer, and Creator of FortiChat. Specializing in secure communication systems and modern web technologies.',
   keywords: ['Kakanuru Kedarnath Reddy', 'Cybersecurity', 'Full Stack Developer', 'FortiChat', 'Next.js', 'React', 'Java', 'Ethical Hacking', 'Software Engineering'],
   authors: [{ name: 'Kakanuru Kedarnath Reddy' }],
+  openGraph: {
+    title: 'Kakanuru Kedarnath Reddy | Cybersecurity & Full Stack Developer',
+    description: 'Portfolio of Kakanuru Kedarnath Reddy. Cybersecurity Enthusiast, Full Stack Developer, and Creator of FortiChat.',
+    url: 'https://your-portfolio-url.com',
+    siteName: 'Kakanuru Kedarnath Reddy Portfolio',
+    images: [
+      {
+        url: '/profile.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Kakanuru Kedarnath Reddy',
+      },
+    ],
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <AntdRegistry>
           <ThemeProvider>

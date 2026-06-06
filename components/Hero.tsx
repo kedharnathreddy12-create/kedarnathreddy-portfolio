@@ -58,14 +58,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(0, 240, 255, 0.1)', border: '1px solid var(--neon-blue)', borderRadius: '30px', color: 'var(--neon-blue)', fontWeight: 600, marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+          <div style={{ display: 'inline-block', padding: '0.5rem 1rem', background: 'rgba(0, 240, 255, 0.1)', border: '1px solid var(--neon-blue)', borderRadius: '30px', color: 'var(--neon-blue)', fontWeight: 600, marginBottom: '1.5rem', fontSize: '1rem' }}>
             🎥 Tech Content Creator
           </div>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 800, marginBottom: '1rem', lineHeight: 1.2 }}>
+          <h1 className="hero-title">
             Hi, I'm <br className="mobile-break" />
             <span className="gradient-text">Kakanuru Kedarnath Reddy</span>
           </h1>
-          <h2 style={{ fontSize: '1.5rem', color: 'var(--text-muted)', fontWeight: 400 }}>
+          <h2 className="hero-subtitle">
             Tech Content Creator | Cybersecurity Enthusiast | Full Stack Developer | Creator of FortiChat
           </h2>
         </motion.div>
@@ -94,7 +94,7 @@ export default function Hero() {
           <Button 
             size="large" 
             icon={<DownloadOutlined />}
-            href="#"
+            href="#TODO_ADD_RESUME_LINK"
             style={{ 
               background: 'transparent',
               borderColor: 'var(--neon-purple)',
@@ -121,6 +121,17 @@ export default function Hero() {
       </div>
       
       <style>{`
+        .hero-title {
+          font-size: clamp(2.5rem, 8vw + 1rem, 5rem);
+          font-weight: 800;
+          margin-bottom: 1rem;
+          line-height: 1.2;
+        }
+        .hero-subtitle {
+          font-size: clamp(1.2rem, 3vw + 0.5rem, 2rem);
+          color: var(--text-muted);
+          font-weight: 400;
+        }
         .neon-hover:hover {
           box-shadow: 0 0 15px rgba(189, 0, 255, 0.4);
           color: #fff !important;
@@ -128,8 +139,6 @@ export default function Hero() {
         }
         @media (min-width: 768px) {
           .mobile-break { display: none; }
-          h1 { font-size: 5rem !important; }
-          h2 { font-size: 2rem !important; }
         }
       `}</style>
     </section>
