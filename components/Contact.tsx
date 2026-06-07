@@ -21,7 +21,7 @@ const socials = [
   {
     name: 'LinkedIn',
     icon: <LinkedinOutlined />,
-    url: '#TODO_UPDATE_LINKEDIN_URL',
+    url: 'https://www.linkedin.com/in/kedarnath-reddy-kakanuru-3b87b3414',
     color: '#0a66c2' // LinkedIn Blue
   },
   {

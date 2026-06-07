@@ -94,7 +94,9 @@ export default function Hero() {
           <Button 
             size="large" 
             icon={<DownloadOutlined />}
-            href="#TODO_ADD_RESUME_LINK"
+            href="/Kedarnath_Reddy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ 
               background: 'transparent',
               borderColor: 'var(--neon-purple)',
