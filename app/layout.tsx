@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'Kakanuru Kedharnath Reddy Portfolio',
     images: [
       {
-        url: '/profile.jpg',
+        url: '/hero-profile.jpg',
         width: 1200,
         height: 630,
         alt: 'Kakanuru Kedharnath Reddy',

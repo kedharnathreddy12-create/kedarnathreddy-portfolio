@@ -44,7 +44,7 @@ export default function Hero() {
             position: 'relative'
           }}>
             <Image 
-              src="/profile.jpg" 
+              src="/hero-profile.jpg" 
               alt="Kakanuru Kedharnath Reddy"
               fill
               style={{ objectFit: 'cover' }}
