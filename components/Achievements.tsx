@@ -2,29 +2,29 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TrophyOutlined, PlaySquareOutlined, TeamOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
+import { RocketOutlined, PlaySquareOutlined, CodeOutlined, AppstoreOutlined } from '@ant-design/icons';
 
 export default function Achievements() {
   const cards = [
     {
-      icon: <SafetyCertificateOutlined />,
-      title: 'Secure App Dev',
-      desc: 'Developed multiple robust applications with a strong focus on security, cryptography, and data protection.'
+      icon: <RocketOutlined />,
+      title: 'AI-Powered Applications',
+      desc: 'Built practical applications integrating AI capabilities with modern web technologies.'
     },
     {
-      icon: <TeamOutlined />,
-      title: 'Community Service',
-      desc: 'Led a project analyzing and improving internet usage patterns in rural villages to promote digital inclusion.'
+      icon: <CodeOutlined />,
+      title: 'Full Stack Projects',
+      desc: 'Developed complete web applications using modern frontend, backend, database, and deployment technologies.'
     },
     {
       icon: <PlaySquareOutlined />,
       title: 'Tech Content Creation',
-      desc: 'Active content creator sharing knowledge on technology education, cybersecurity awareness, and tech discussions.'
+      desc: 'Creating technology-focused content to educate, simplify concepts, and share useful technology information.'
     },
     {
-      icon: <TrophyOutlined />,
-      title: 'Technical Excellence',
-      desc: 'Recognized for building complex, reliable systems like the Java Secure Chat App and FortiChat.'
+      icon: <AppstoreOutlined />,
+      title: 'Project Development',
+      desc: 'Built and deployed projects including Nebula, Smart AI Resume Maker, and Gita Mitra.'
     }
   ];
 

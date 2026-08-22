@@ -11,13 +11,13 @@ export default function Footer() {
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
           <div style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'Outfit' }}>
-            <span className="gradient-text">Kakanuru Kedarnath Reddy</span>
+            <span className="gradient-text">Kakanuru Kedharnath Reddy</span>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', maxWidth: '400px' }}>
-            Building secure communication systems and modern web applications with a focus on privacy and performance.
+            Building modern web applications, exploring AI, and sharing technology with the world.
           </p>
           <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '1rem' }}>
-            &copy; {new Date().getFullYear()} Kakanuru Kedarnath Reddy. All rights reserved.
+            &copy; 2026 Kakanuru Kedharnath Reddy. All rights reserved.
           </div>
         </div>
       </div>

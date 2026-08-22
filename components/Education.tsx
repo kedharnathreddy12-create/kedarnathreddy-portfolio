@@ -41,7 +41,8 @@ export default function Education() {
                 <ClockCircleOutlined style={{ fontSize: '1.2rem', color: 'var(--neon-blue)', marginTop: '4px' }} />
                 <div>
                   <strong style={{ color: 'var(--text-main)', fontSize: '1.1rem' }}>Academic Status:</strong>
-                  <div style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>Completed 3rd Year, 2nd Semester</div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>4th Year — Currently Pursuing</div>
+                  <div style={{ color: 'var(--text-muted)', fontSize: '1.05rem' }}>2023 – 2027</div>
                 </div>
               </div>
             </div>
@@ -49,10 +50,10 @@ export default function Education() {
             <div style={{ background: 'rgba(255, 255, 255, 0.03)', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
               <h4 style={{ color: 'var(--neon-blue)', marginBottom: '1rem', fontSize: '1.1rem' }}>Academic Overview</h4>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '1rem' }}>
-                The B.Tech program in Artificial Intelligence and Machine Learning at DRKVSRIT provides a rigorous curriculum centered around modern computing technologies. The coursework emphasizes core computer science principles, advanced mathematics, and specialized AI/ML algorithms.
+                The B.Tech program in Artificial Intelligence and Machine Learning focuses on modern computing technologies, software engineering, artificial intelligence, machine learning, mathematics, algorithms, and practical problem solving.
               </p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                DRKVSR Institute of Technology is dedicated to fostering technical excellence and analytical thinking, equipping students with the theoretical and practical knowledge required to engineer intelligent software systems and solve complex computational problems.
+                Throughout the program, I have been developing my skills across software development, AI/ML, web technologies, databases, and modern application development.
               </p>
             </div>
           </div>

@@ -10,9 +10,9 @@ import ThemeSwitcher from '@/components/ThemeSwitcher';
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Education', href: '#education' },
-  { name: 'FortiChat', href: '#fortichat' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Timeline', href: '#timeline' },
+  { name: 'Achievements', href: '#achievements' },
   { name: 'Contact', href: '#contact' },
 ];
 

@@ -45,7 +45,7 @@ export default function Hero() {
           }}>
             <Image 
               src="/profile.jpg" 
-              alt="Kakanuru Kedarnath Reddy"
+              alt="Kakanuru Kedharnath Reddy"
               fill
               style={{ objectFit: 'cover' }}
               priority
@@ -63,11 +63,14 @@ export default function Hero() {
           </div>
           <h1 className="hero-title">
             Hi, I'm <br className="mobile-break" />
-            <span className="gradient-text">Kakanuru Kedarnath Reddy</span>
+            <span className="gradient-text">Kakanuru Kedharnath Reddy</span>
           </h1>
           <h2 className="hero-subtitle">
-            Tech Content Creator | Cybersecurity Enthusiast | Full Stack Developer | Creator of FortiChat
+            AI/ML Student | Full Stack Developer | Tech Content Creator | AI Enthusiast
           </h2>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', marginTop: '1.5rem', maxWidth: '600px', margin: '1.5rem auto 0', lineHeight: 1.6 }}>
+            Building modern applications, exploring AI, and creating technology-focused solutions that make an impact.
+          </p>
         </motion.div>
 
         <motion.div
@@ -80,7 +83,7 @@ export default function Hero() {
             type="primary" 
             size="large" 
             icon={<ProjectOutlined />}
-            href="#fortichat"
+            href="#projects"
             style={{ 
               background: 'var(--neon-blue)', 
               color: '#000', 

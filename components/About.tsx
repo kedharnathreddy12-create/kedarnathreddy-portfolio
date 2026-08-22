@@ -18,28 +18,31 @@ export default function About() {
           <div className="glass-card about-card">
             <div className="about-text-content">
               <p>
-                I am <strong className="gradient-text" style={{ fontWeight: 700 }}>Kakanuru Kedarnath Reddy</strong>, a cybersecurity enthusiast, software developer, and tech content creator passionate about building secure and reliable applications.
+                I’m <strong className="gradient-text" style={{ fontWeight: 700 }}>Kakanuru Kedharnath Reddy</strong>, a final-year B.Tech student specializing in Artificial Intelligence & Machine Learning, a Full Stack Developer, and a Tech Content Creator.
               </p>
               <p>
-                I am currently focused on developing FortiChat, a secure communication platform, while continuously expanding my knowledge in software engineering, cybersecurity, and modern web technologies.
+                I enjoy building practical web applications, experimenting with AI-powered solutions, and creating technology-focused content that makes complex concepts easier to understand.
               </p>
               <p>
-                Alongside development, I create technology-focused content to share knowledge, simplify complex concepts, and help others learn about technology and cybersecurity.
+                My current work focuses on modern technologies such as Next.js, React, TypeScript, Supabase, AI/ML, and Java, with an emphasis on creating clean, useful, and production-ready applications.
+              </p>
+              <p>
+                I’m passionate about continuously improving my skills in software development, AI, cybersecurity, and emerging technologies.
               </p>
             </div>
             
             <div className="about-stats-grid">
               <div>
-                <h3 className="gradient-text stat-value">100%</h3>
-                <p style={{ color: 'var(--text-muted)' }}>Commitment to Security</p>
+                <h3 className="gradient-text stat-value">4th Year</h3>
+                <p style={{ color: 'var(--text-muted)' }}>B.Tech AI & ML</p>
               </div>
               <div>
                 <h3 className="gradient-text stat-value">Full Stack</h3>
-                <p style={{ color: 'var(--text-muted)' }}>Development Expertise</p>
+                <p style={{ color: 'var(--text-muted)' }}>Development</p>
               </div>
               <div>
-                <h3 className="gradient-text stat-value">E2EE</h3>
-                <p style={{ color: 'var(--text-muted)' }}>Architecture Specialist</p>
+                <h3 className="gradient-text stat-value">AI/ML</h3>
+                <p style={{ color: 'var(--text-muted)' }}>Enthusiast</p>
               </div>
             </div>
           </div>

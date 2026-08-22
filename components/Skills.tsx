@@ -5,13 +5,33 @@ import { motion } from 'framer-motion';
 
 const skills = [
   {
-    category: 'Development',
-    items: ['Java', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Supabase'],
+    category: 'Languages',
+    items: ['Java', 'JavaScript', 'TypeScript', 'Python'],
     color: 'var(--neon-blue)'
   },
   {
-    category: 'Tools & Security',
-    items: ['Git & GitHub', 'Linux', 'Cybersecurity', 'Content Creation'],
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS'],
+    color: 'var(--neon-purple)'
+  },
+  {
+    category: 'Backend & Database',
+    items: ['Node.js', 'Supabase', 'PostgreSQL'],
+    color: 'var(--neon-blue)'
+  },
+  {
+    category: 'AI & ML',
+    items: ['Artificial Intelligence', 'Machine Learning', 'Generative AI', 'Gemini API'],
+    color: 'var(--neon-purple)'
+  },
+  {
+    category: 'Tools',
+    items: ['Git', 'GitHub', 'Linux', 'VS Code', 'Vercel'],
+    color: 'var(--neon-blue)'
+  },
+  {
+    category: 'Content Creation',
+    items: ['YouTube', 'Instagram', 'Video Editing', 'Technology Content'],
     color: 'var(--neon-purple)'
   }
 ];
