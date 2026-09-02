@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GlobalOutlined, GithubOutlined, RocketOutlined, FileTextOutlined, BookOutlined } from '@ant-design/icons';
+import { GlobalOutlined, GithubOutlined, RocketOutlined, FileTextOutlined, BookOutlined, HomeOutlined } from '@ant-design/icons';
 
 export default function Projects() {
   const projects = [
@@ -35,6 +35,16 @@ export default function Projects() {
       githubLink: null,
       featured: false,
       color: 'var(--neon-blue)'
+    },
+    {
+      title: 'Sri Lakshmi Function Hall',
+      description: 'A modern and elegant website developed for Sri Lakshmi Function Hall, providing visitors with information about the venue, facilities, services, and event booking details through a clean and responsive user experience.',
+      icon: <HomeOutlined />,
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+      demoLink: 'https://sri-lakshmi-function-hall.vercel.app/',
+      githubLink: null,
+      featured: true,
+      color: 'var(--neon-purple)'
     }
   ];
 
