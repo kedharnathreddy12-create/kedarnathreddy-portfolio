@@ -18,7 +18,7 @@ export default function About() {
           <div className="glass-card about-card">
             <div className="about-text-content">
               <p>
-                I’m <strong className="gradient-text" style={{ fontWeight: 700 }}>Kakanuru Kedharnath Reddy</strong>, a final-year B.Tech student specializing in Artificial Intelligence & Machine Learning, a Full Stack Developer, and a Tech Content Creator.
+                I’m <strong className="gradient-text" style={{ fontWeight: 700 }}>Kakanuru Kedar Nath Reddy</strong>, a final-year B.Tech student specializing in Artificial Intelligence & Machine Learning, a Full Stack Developer, and a Tech Content Creator.
               </p>
               <p>
                 I enjoy building practical web applications, experimenting with AI-powered solutions, and creating technology-focused content that makes complex concepts easier to understand.

@@ -39,7 +39,7 @@ const socials = [
   {
     name: 'Email',
     icon: <MailOutlined />,
-    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=techtuberkedhar@gmail.com&su=Portfolio%20Contact&body=Hello%20Kedarnath,',
+    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=techtuberkedhar@gmail.com&su=Portfolio%20Contact&body=Hello%20Kedar%20Nath,',
     color: '#ea4335' // Gmail Red
   }
 ];

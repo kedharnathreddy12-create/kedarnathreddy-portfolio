@@ -2,18 +2,18 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GlobalOutlined, GithubOutlined, RocketOutlined, FileTextOutlined, BookOutlined, HomeOutlined } from '@ant-design/icons';
+import { GlobalOutlined, GithubOutlined, RocketOutlined, FileTextOutlined, BookOutlined, HomeOutlined, CodeOutlined } from '@ant-design/icons';
 
 export default function Projects() {
   const projects = [
     {
-      title: 'Nebula',
-      description: 'A modern technology project focused on creating a powerful and intuitive digital experience using contemporary web technologies.',
-      icon: <RocketOutlined />,
-      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      demoLink: 'https://nebulatrade.vercel.app/',
+      title: 'Gita Mitra',
+      description: 'A simple and interactive learning platform that explains the teachings of the Bhagavad Gita in an easy-to-understand way, with chapter-based learning and AI-powered assistance.',
+      icon: <BookOutlined />,
+      tech: ['Next.js', 'TypeScript', 'AI', 'Gemini', 'Tailwind CSS'],
+      demoLink: 'https://gitamitra.vercel.app/',
       githubLink: null,
-      featured: true,
+      featured: false,
       color: 'var(--neon-blue)'
     },
     {
@@ -27,11 +27,11 @@ export default function Projects() {
       color: 'var(--neon-purple)'
     },
     {
-      title: 'Gita Mitra',
-      description: 'A simple and interactive learning platform that explains the teachings of the Bhagavad Gita in an easy-to-understand way, with chapter-based learning and AI-powered assistance.',
-      icon: <BookOutlined />,
-      tech: ['Next.js', 'TypeScript', 'AI', 'Gemini', 'Tailwind CSS'],
-      demoLink: 'https://gitamitra.vercel.app/',
+      title: 'Nebula',
+      description: 'A modern technology project focused on creating a powerful and intuitive digital experience using contemporary web technologies.',
+      icon: <RocketOutlined />,
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+      demoLink: 'https://nebulatrade.vercel.app/',
       githubLink: null,
       featured: false,
       color: 'var(--neon-blue)'
@@ -43,8 +43,18 @@ export default function Projects() {
       tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
       demoLink: 'https://sri-lakshmi-function-hall.vercel.app/',
       githubLink: null,
-      featured: true,
+      featured: false,
       color: 'var(--neon-purple)'
+    },
+    {
+      title: 'Python Studio',
+      description: 'An interactive Python learning and coding platform designed to help students learn Python through lessons, practice activities, projects, code execution, visualizations, and an AI-powered learning experience.',
+      icon: <CodeOutlined />,
+      tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'AI', 'Python'],
+      demoLink: 'http://pythonstudio.vercel.app/',
+      githubLink: null,
+      featured: true,
+      color: 'var(--neon-blue)'
     }
   ];
 

@@ -45,7 +45,7 @@ export default function Hero() {
           }}>
             <Image 
               src="/hero-profile.jpg" 
-              alt="Kakanuru Kedharnath Reddy"
+              alt="Kakanuru Kedar Nath Reddy"
               fill
               style={{ objectFit: 'cover' }}
               priority
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
           <h1 className="hero-title">
             Hi, I'm <br className="mobile-break" />
-            <span className="gradient-text">Kakanuru Kedharnath Reddy</span>
+            <span className="gradient-text">Kakanuru Kedar Nath Reddy</span>
           </h1>
           <h2 className="hero-subtitle">
             AI/ML Student | Full Stack Developer | Tech Content Creator | AI Enthusiast
